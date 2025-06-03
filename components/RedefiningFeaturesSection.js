@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const features = [
   {
@@ -41,9 +42,12 @@ const RedefiningFeaturesSection = () => {
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-4">
               <div className="text-white rounded-full flex items-center justify-center text-xl font-bold mt-1 h-14 w-14 md:h-14 md:w-14">
-                <img
+                <Image
                   src={`/${feature.avatar}`}
                   className="w-8 h-8 md:w-10 md:h-10"
+                  alt={feature.title}
+                  width={40}
+                  height={40}
                 />
               </div>
               <div>
@@ -63,9 +67,11 @@ const RedefiningFeaturesSection = () => {
         </div>
         {/* Product Image */}
         <div className="flex-1 flex items-center justify-center">
-          <img
+          <Image
             src="/product_features.png"
             alt="Product features"
+            width={560}
+            height={560}
             className="w-[560px] h-[560px] object-contain"
           />
         </div>

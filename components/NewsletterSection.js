@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const NewsletterSection = () => {
   return (
@@ -26,15 +27,33 @@ const NewsletterSection = () => {
         </form>
         <div className="flex flex-row justify-center items-center gap-3 text-black text-sm mt-2">
           <span>
-            <img src="Check.png" alt="check" className="h-4 w-4" />
+            <Image
+              src="/Check.png"
+              alt="check"
+              width={16}
+              height={16}
+              className="h-4 w-4"
+            />
           </span>
           <span>Fully Secure</span>
           <span>
-            <img src="Check.png" alt="check" className="h-4 w-4" />
+            <Image
+              src="/Check.png"
+              alt="check"
+              width={16}
+              height={16}
+              className="h-4 w-4"
+            />
           </span>
           <span>24/7 Support</span>
           <span>
-            <img src="Check.png" alt="check" className="h-4 w-4" />
+            <Image
+              src="/Check.png"
+              alt="check"
+              width={16}
+              height={16}
+              className="h-4 w-4"
+            />
           </span>
           <span>Done Deal</span>
         </div>

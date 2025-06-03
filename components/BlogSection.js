@@ -1,30 +1,31 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const blogs = [
   {
-    image: "blog1.png",
+    image: "/blog1.png",
     title: "Organize your digital assets with a new methodology here...",
     desc: "Proactively orchestrate leveraged resources via enabled methodologies. Collaboratively enhance scalable e-services for standards.",
-    avatar: "blog_ava.png",
+    avatar: "/blog_ava.png",
     author: "Andrew Meier",
     role: "CEO",
     date: "31 Apr",
   },
   {
-    image: "blog2.png",
+    image: "/blog2.png",
     title: "Organize your digital assets with a new methodology here...",
     desc: "Quickly synergize resource-leveling relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.",
-    avatar: "blog_ava(2).png",
+    avatar: "/blog_ava(2).png",
     author: "David Mason",
     role: "CTO",
     date: "31 Apr",
   },
   {
-    image: "blog3.png",
+    image: "/blog3.png",
     title: "Organize your digital assets with a new methodology here...",
     desc: "Proactively orchestrate leveraged resources via enabled methodologies. Collaboratively enhance scalable e-services for standards.",
-    avatar: "blog_ava(3).png",
+    avatar: "/blog_ava(3).png",
     author: "Andrea Meier",
     role: "UI",
     date: "29 Apr",
@@ -51,9 +52,11 @@ const BlogSection = () => {
               className="rounded-lg flex flex-col relative cursor-pointer"
             >
               <div className="relative group mb-4">
-                <img
+                <Image
                   src={blog.image}
                   alt={blog.title}
+                  width={800}
+                  height={400}
                   className="rounded-lg w-full h-[300px] object-cover"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 rounded-lg">
@@ -69,9 +72,11 @@ const BlogSection = () => {
               <div className="flex items-center gap-2 mt-auto w-full justify-between">
                 <div className="flex gap-2">
                   <div>
-                    <img
-                      src={`/${blog.avatar}`}
+                    <Image
+                      src={blog.avatar}
                       alt={blog.author}
+                      width={40}
+                      height={40}
                       className="w-10 h-10 rounded-full"
                     />
                   </div>

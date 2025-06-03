@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -6,7 +7,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 py-12 w-full">
           <div className="flex flex-col items-start w-full mx-auto">
-            <img src="Lookscout.png" alt="lookscout logo" className="mb-2" />
+            <Image
+              src="/Lookscout.png"
+              alt="lookscout logo"
+              width={120}
+              height={40}
+              className="mb-2"
+            />
             <p className="text-gray-400 lg:text-xl text-md mb-4 mt-6">
               Generate outside the box thinking with the possibility to target
               the low.
@@ -95,16 +102,40 @@ const Footer = () => {
           </span>
           <div className="flex gap-4 mt-2 md:mt-0 justify-center w-full md:w-auto">
             <a href="#" className="text-gray-400 hover:text-white">
-              <img src="facebook_logo.png" alt="facebook" className="h-6 w-6" />
+              <Image
+                src="/facebook_logo.png"
+                alt="facebook"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
-              <img src="google_logo.png" alt="google" className="h-6 w-6" />
+              <Image
+                src="/google_logo.png"
+                alt="google"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
-              <img src="apple_logo.png" alt="apple" className="h-6 w-6" />
+              <Image
+                src="/apple_logo.png"
+                alt="apple"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
-              <img src="insta_logo.png" alt="instagram" className="h-6 w-6" />
+              <Image
+                src="/insta_logo.png"
+                alt="instagram"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
             </a>
           </div>
         </div>

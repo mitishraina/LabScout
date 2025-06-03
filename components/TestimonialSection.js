@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const TestimonialSection = () => {
   return (
@@ -13,18 +14,24 @@ const TestimonialSection = () => {
           strategies to ensure domination.
         </p>
         <div className="max-w-7xl mx-auto bg-gray-50 rounded-lg shadow p-8 flex flex-col items-center text-center md:text-center">
-          <img
-            src="Lookscout_black.png"
+          <Image
+            src="/Lookscout_black.png"
             alt="lookscout logo"
+            width={150}
+            height={50}
             className="h-full object-contain mb-2"
           />
           <p className="max-w-[58rem] text-3xl font-medium text-[#151B28] mb-4 p-6">
-            Thank you for making it painless, pleasant and most of all hassle free! I love LookScout. I can't say enough about LookScout. Great job, I will be ordering again!
+            Thank you for making it painless, pleasant and most of all hassle
+            free! I love LookScout. I can&apos;t say enough about LookScout.
+            Great job, I will be ordering again!
           </p>
           <div className="flex gap-3 items-center mt-2 text-left md:text-center">
-            <img
-              src="ceo.png"
+            <Image
+              src="/ceo.png"
               alt="ceo"
+              width={40}
+              height={40}
               className="h-8 w-8 md:h-10 md:w-10 rounded-full object-cover"
             />
             <div className="flex flex-col">

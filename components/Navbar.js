@@ -8,7 +8,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center justify-between gap-12">
           <div className="flex items-center gap-2 font-bold text-lg">
-            <Image src="/Lookscout.png" alt="Lookscout Logo" width={150} height={150} />
+            <Image
+              src="/Lookscout.png"
+              alt="Navbar Logo"
+              width={100}
+              height={100}
+              className="h-8 w-auto"
+            />
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#">Home</a>
@@ -24,7 +30,7 @@ const Navbar = () => {
           <button className="bg-transparent rounded px-4 py-2 font-semibold text-white hover:bg-[#437EF7] transition cursor-pointer">
             Log In
           </button>
-          <button className="bg-[#437EF7] text-white rounded px-4 py-2 font-semibold hover:bg-[#2B63D9] transition cursor-pointer">
+          <button className="bg-[#437EF7] text-white rounded px-4 py-2 font-semibold hover:bg-blue-400 transition cursor-pointer">
             Sign up
           </button>
         </div>
