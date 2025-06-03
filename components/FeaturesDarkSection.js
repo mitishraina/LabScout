@@ -50,6 +50,7 @@ const FeaturesDarkSection = () => {
               <div className="text-white rounded-full flex items-center justify-center text-xl font-bold mt-1 h-14 w-14 md:h-14 md:w-14">
                 <Image
                   src={`/${feature.avatar}`}
+                  alt={feature.title}
                   width={20}
                   height={20}
                   className="w-8 h-8 md:w-10 md:h-10"

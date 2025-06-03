@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const brands = [
@@ -15,25 +16,39 @@ const marquee = () => {
   return (
     <div className="container mx-auto">
       <div className="flex">
-        <motion.div initial={{ x: 0 }} animate={{ x:"-100%" }} transition={{ duration:15, repeat: Infinity, ease: "linear" }} className="flex flex-shrink-0">
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+          className="flex flex-shrink-0"
+        >
           {brands.map((brand, index) => {
             return (
-              <img
+              <Image
+                key={index}
                 src={brand.logo}
                 alt={brand.name}
-                key={index}
+                width={800}
+                height={600}
                 className="h-10 w-auto pr-20"
               />
             );
           })}
         </motion.div>
-        <motion.div initial={{ x: 0 }} animate={{ x:"-100%" }} transition={{ duration:15, repeat: Infinity, ease: "linear" }} className="flex flex-shrink-0">
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+          className="flex flex-shrink-0"
+        >
           {brands.map((brand, index) => {
             return (
-              <img
+              <Image
+                key={index}
                 src={brand.logo}
                 alt={brand.name}
-                key={index}
+                width={800}
+                height={600}
                 className="h-10 w-auto pr-20"
               />
             );
