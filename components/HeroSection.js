@@ -42,7 +42,6 @@ const HeroSection = () => {
     }, 3000);
   };
 
-
   return (
     <section className="relative bg-[#2B63D9] w-full text-white pt-10 pb-16 px-4 md:px-0 min-h-[85vh] flex flex-col md:flex-row items-center">
       {/* Mobile image */}
@@ -62,15 +61,18 @@ const HeroSection = () => {
           Design Workflow.
         </h1>
         <p className="text-base md:text-md opacity-80 max-w-lg">
-          We've been told it's not possible to overachieve our customers&apos;
-          expectations. We have not reinvented the wheel, we decided to build
-          upon it.
+          We&apos;ve been told it&apos;s not possible to overachieve our
+          customers&apos; expectations. We have not reinvented the wheel, we
+          decided to build upon it.
         </p>
-        <button className={`bg-[#437EF7] text-white font-semibold px-6 py-2 rounded shadow w-fit transition cursor-pointer ${notificationSent ? "bg-green text-gray-700" : "hover:bg-blue-400"}`}
-        style={{ animationDelay: "0.4s" }}
-        onClick={handleSendNotification}
+        <button
+          className={`bg-[#437EF7] text-white font-semibold px-6 py-2 rounded shadow w-fit transition cursor-pointer ${
+            notificationSent ? "bg-green text-gray-700" : "hover:bg-blue-400"
+          }`}
+          style={{ animationDelay: "0.4s" }}
+          onClick={handleSendNotification}
         >
-          {notificationSent ? "Notification Sent!" : "Send Notification"}          
+          {notificationSent ? "Notification Sent!" : "Send Notification"}
         </button>
         <div className="flex flex-col gap-4">
           <span className="text-sm opacity-80">Who supports us</span>
