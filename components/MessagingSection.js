@@ -51,7 +51,7 @@ const MessagingSection = () => {
               <div className="bg-[#437EF7] text-white rounded-full w-12 h-12 flex items-center justify-center mb-4 text-xl font-bold">
                 <Image
                   src={`/${feature.avatar}`}
-                  alt={feature.title}
+                  alt={`${feature.title}`}
                   width={100}
                   height={100}
                   className="w-9 h-9"
